@@ -70,20 +70,36 @@ Built with Logistic Regression, TF-IDF, and classic preprocessing — this proje
 
 ---
 
-## 💡 Project Highlights
+## 🌐 Live Interface (Gradio)
 
-- End-to-end NLP pipeline  
-- Real-world scale (3.6M reviews)  
-- TF-IDF + Logistic Regression baseline  
-- Clear results with confusion matrix  
+This project includes a simple web interface built with [Gradio](https://gradio.app/), allowing users to test sentiment classification in real time.
 
----
+### 🖥 How to launch the app locally:
 
-## ⚠️ Note
+1. Make sure you have the model and vectorizer saved as:
+   - `logistic_model.pkl`
+   - `tfidf_vectorizer.pkl`
 
-To keep the repository lightweight, the original training files (`amazon_train.txt`, `amazon_test.txt`) are not included.  
-You can download them from the original [Kaggle dataset](https://www.kaggle.com/datasets/bittlingmayer/amazonreviews) to run the notebook locally.
+2. Install Gradio:
+   ```bash
+   pip install gradio
+   ```
 
+3. Run the app:
+   ```bash
+   python app.py
+   ```
+
+The app will launch in your browser, where you can enter any product review and get an instant sentiment prediction:
+
+```
+😊 Positive  
+😠 Negative
+```
+
+<p align="center">
+  <img src="preview.png" width="600"/>
+</p>
 
 ---
 
