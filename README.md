@@ -108,4 +108,4 @@ The app will launch in your browser, where you can enter any product review and 
 **Yevhenii Aloshyn**  
 Machine Learning & Cybersecurity Enthusiast  
 📍 Toronto, Canada  
-[GitHub](https://github.com/outeast98)
+[GitHub](https://github.com/callmeoutsider)
