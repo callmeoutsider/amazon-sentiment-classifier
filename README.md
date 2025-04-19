@@ -17,7 +17,7 @@ Built with Logistic Regression, TF-IDF, and classic preprocessing — this proje
 
 ## 🧰 Tools & Stack
 - Python 3.12
-- Jupyter Notebook (in VS Code)
+- Jupyter Notebook (VS Code)
 - Pandas, Scikit-learn, Matplotlib, Seaborn
 
 ---
@@ -26,11 +26,11 @@ Built with Logistic Regression, TF-IDF, and classic preprocessing — this proje
 
 | Step | Description |
 |------|-------------|
-| 1️⃣  | Load `.txt` FastText-style dataset |
+| 1️⃣  | Load FastText-style dataset (`.txt`) |
 | 2️⃣  | Clean and normalize text |
-| 3️⃣  | Vectorize using TF-IDF |
+| 3️⃣  | Vectorize text using TF-IDF |
 | 4️⃣  | Train a Logistic Regression classifier |
-| 5️⃣  | Evaluate with classification report and confusion matrix |
+| 5️⃣  | Evaluate using classification report and confusion matrix |
 
 ---
 
@@ -39,15 +39,49 @@ Built with Logistic Regression, TF-IDF, and classic preprocessing — this proje
 - **Accuracy**: ~90%
 - **F1-Score**: 0.90
 - **Model**: Logistic Regression
-- **Features**: 5000 top TF-IDF terms
+- **Features**: Top 5000 TF-IDF terms
 
-Confusion Matrix:
+### 📊 Confusion Matrix
 
-*(add screenshot here or use `plt.savefig()` to export)*
+<p align="center">
+  <img src="confusion_matrix.png" width="500"/>
+</p>
 
 ---
 
 ## 🚀 How to Run
 
-```bash
-pip install -r requirements.txt
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/outeast98/amazon-sentiment-classifier.git
+   cd amazon-sentiment-classifier
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Open the Jupyter notebook:
+   ```bash
+   sentiment_analysis.ipynb
+   ```
+   and run each cell step by step.
+
+---
+
+## 💡 Project Highlights
+
+- End-to-end NLP pipeline  
+- Real-world scale (3.6M reviews)  
+- TF-IDF + Logistic Regression baseline  
+- Clear results with confusion matrix  
+
+---
+
+## 👨‍💻 Author
+
+**Yevhenii Aloshyn**  
+Machine Learning & Cybersecurity Enthusiast  
+📍 Toronto, Canada  
+[GitHub](https://github.com/outeast98)
