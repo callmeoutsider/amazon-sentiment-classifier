@@ -79,6 +79,14 @@ Built with Logistic Regression, TF-IDF, and classic preprocessing — this proje
 
 ---
 
+## ⚠️ Note
+
+To keep the repository lightweight, the original training files (`amazon_train.txt`, `amazon_test.txt`) are not included.  
+You can download them from the original [Kaggle dataset](https://www.kaggle.com/datasets/bittlingmayer/amazonreviews) to run the notebook locally.
+
+
+---
+
 ## 👨‍💻 Author
 
 **Yevhenii Aloshyn**  
