@@ -2,4 +2,4 @@ pandas
 scikit-learn
 seaborn
 matplotlib
-gradio>=4.20.1
+gradio>=4.44.1
