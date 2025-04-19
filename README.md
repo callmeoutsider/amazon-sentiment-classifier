@@ -1,3 +1,14 @@
+---
+title: Amazon Sentiment Classifier
+emoji: 🧠
+colorFrom: gray
+colorTo: indigo
+sdk: gradio
+sdk_version: 4.14.0
+app_file: app.py
+pinned: false
+---
+
 # 🧠 Amazon Sentiment Classifier
 
 A fast and effective sentiment classification project using 3.6 million Amazon product reviews.  

@@ -1,13 +1,10 @@
 import gradio as gr
-import pickle
+import joblib
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Загрузка модели и векторизатора
-with open("logistic_model.pkl", "rb") as f:
-    model = pickle.load(f)
-
-with open("tfidf_vectorizer.pkl", "rb") as f:
-    vectorizer = pickle.load(f)
+model = joblib.load("logistic_model.pkl")
+vectorizer = joblib.load("tfidf_vectorizer.pkl")
 
 # Предобработка текста
 def clean_text(text):
@@ -21,5 +18,14 @@ def predict_sentiment(text):
     return "😊 Positive" if prediction == 1 else "😠 Negative"
 
 # Интерфейс Gradio
-iface = gr.Interface(fn=predict_sentiment, inputs="text", outputs="text", title="Amazon Sentiment Classifier")
+iface = gr.Interface(
+    fn=predict_sentiment,
+    inputs="text",
+    outputs="text",
+    title="Amazon Sentiment Classifier",
+    description="Enter an Amazon product review to detect its sentiment",
+    theme="soft",
+)
+
+# Запуск с публичной ссылкой
 iface.launch(share=True)
