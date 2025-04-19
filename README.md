@@ -12,6 +12,9 @@ Built with Logistic Regression, TF-IDF, and classic preprocessing — this proje
   - `__label__1` = Negative  
   - `__label__2` = Positive  
 - **Format**: FastText-style plain text
+📥 [Download dataset from Kaggle](https://www.kaggle.com/datasets/bittlingmayer/amazonreviews)
+> ⚠️ Due to file size limits, `amazon_train.txt` and `amazon_test.txt` are not included in this repository.  
+> Please download them separately and place in the project root directory if you want to re-train the model.
 
 ---
 
